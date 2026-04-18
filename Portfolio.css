@@ -68,6 +68,21 @@ h1{
 .scolor{
     color: rgb(104, 124, 225);
 }
+@media (max-width:768px){
+    #navbar{
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .nav-link{
+        margin-top: 15px;
+    }
+
+    .nav-link li{
+        display: block;
+        margin: 10px 0;
+    }
+}
 
 /*Home section*/
 #home{
@@ -135,6 +150,35 @@ button:hover{
     background-color: #14A3A6;
     border: none;
     transform: scale(1.03);
+}
+@media (max-width: 768px) {
+    #home{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .home-left h1{
+        font-size: 42px;
+    }
+
+    .home-left p{
+        font-size: 22px;
+    }
+
+    .home-right img{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 25px;
+    }
+
+    .btn-download,
+    button{
+        display: block;
+        width: 80%;
+        margin: 15px auto;
+        font-size: 18px;
+    }
 }
 /*about section*/
 #about{
