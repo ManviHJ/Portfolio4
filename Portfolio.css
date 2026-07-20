@@ -475,3 +475,35 @@ button:hover{
   padding-top: 10px;
   font-size: 14px;
 }
+
+.roles {
+  display: inline-block;
+  height: 24px;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.roles span {
+  display: block;
+  color: #14A3A6;
+  font-weight: bold;
+  animation: slide 8s infinite;
+}
+
+@keyframes slide {
+  0%, 20% {
+    transform: translateY(0);
+  }
+  25%, 45% {
+    transform: translateY(-24px);
+  }
+  50%, 70% {
+    transform: translateY(-48px);
+  }
+  75%, 95% {
+    transform: translateY(-72px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
