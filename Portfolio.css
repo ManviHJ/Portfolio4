@@ -103,6 +103,9 @@ h1{
     font-size:30px;
     margin-top: 15px;
 }
+.name{
+    color:#14A3A6;
+}
 .home-right img{
     width: 320px;
     height: 320px;
@@ -474,47 +477,4 @@ button:hover{
   margin-top: 20px;
   padding-top: 10px;
   font-size: 14px;
-}
-
-.typing{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    font-size:28px; /* change to your size */
-}
-
-.roles{
-    height:1.2em;
-    overflow:hidden;
-    display:inline-block;
-}
-
-.roles span{
-    display:block;
-    height:1.2em;
-    line-height:1.2em;
-    color:#14A3A6;
-    font-weight:600;
-}
-
-.roles{
-    animation:slide 8s infinite;
-}
-
-@keyframes slide{
-    0%,20%{
-        transform:translateY(0);
-    }
-    25%,45%{
-        transform:translateY(-1.2em);
-    }
-    50%,70%{
-        transform:translateY(-2.4em);
-    }
-    75%,95%{
-        transform:translateY(-3.6em);
-    }
-    100%{
-        transform:translateY(0);
-    }
 }
