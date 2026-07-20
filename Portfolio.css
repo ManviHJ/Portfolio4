@@ -476,34 +476,45 @@ button:hover{
   font-size: 14px;
 }
 
-.roles {
-  display: inline-block;
-  height: 24px;
-  overflow: hidden;
-  vertical-align: bottom;
+.typing{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:28px; /* change to your size */
 }
 
-.roles span {
-  display: block;
-  color: #14A3A6;
-  font-weight: bold;
-  animation: slide 8s infinite;
+.roles{
+    height:1.2em;
+    overflow:hidden;
+    display:inline-block;
 }
 
-@keyframes slide {
-  0%, 20% {
-    transform: translateY(0);
-  }
-  25%, 45% {
-    transform: translateY(-24px);
-  }
-  50%, 70% {
-    transform: translateY(-48px);
-  }
-  75%, 95% {
-    transform: translateY(-72px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+.roles span{
+    display:block;
+    height:1.2em;
+    line-height:1.2em;
+    color:#14A3A6;
+    font-weight:600;
+}
+
+.roles{
+    animation:slide 8s infinite;
+}
+
+@keyframes slide{
+    0%,20%{
+        transform:translateY(0);
+    }
+    25%,45%{
+        transform:translateY(-1.2em);
+    }
+    50%,70%{
+        transform:translateY(-2.4em);
+    }
+    75%,95%{
+        transform:translateY(-3.6em);
+    }
+    100%{
+        transform:translateY(0);
+    }
 }
