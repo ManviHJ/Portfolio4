@@ -68,7 +68,48 @@ h1{
 .scolor{
     color: rgb(104, 124, 225);
 }
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    color:white;
+    cursor:pointer;
+}
 @media (max-width:768px){
+
+    #navbar{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px;
+        position:relative;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-link{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:navy;
+        text-align:center;
+        padding:20px 0;
+    }
+
+    .nav-link.active{
+        display:block;
+    }
+
+    .nav-link li{
+        display:block;
+        margin:15px 0;
+    }
+}
+
+/* @media (max-width:768px){
     #navbar{
         flex-direction: column;
         padding: 20px;
@@ -82,7 +123,7 @@ h1{
         display: block;
         margin: 10px 0;
     }
-}
+} */
 
 /*Home section*/
 #home{
