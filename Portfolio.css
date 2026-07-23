@@ -181,6 +181,7 @@ button:hover{
         width: 80%;
         margin: 15px auto;
         font-size: 18px;
+        text-decoration: none;
     }
 }
 /*about section*/
@@ -358,6 +359,39 @@ button:hover{
 .intern-btn:hover{
     background-color: #0B1E6D;
     transform: translateY(-2px);
+}
+
+/* Internship Responsive */
+@media (max-width: 768px) {
+
+    .intern-section{
+        padding: 40px 20px;
+    }
+
+    .intern-card{
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .intern-card img{
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .intern-content{
+        align-items: center;
+    }
+
+    .intern-content p{
+        text-align: center;
+    }
+
+    .intern-btn{
+        margin: 15px auto 0;
+    }
 }
 
 .projects-section{
