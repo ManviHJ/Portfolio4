@@ -183,6 +183,9 @@ button:hover{
         font-size: 18px;
         text-decoration: none;
     }
+    a{
+        text-decoration: none;
+    }
 }
 /*about section*/
 #about{
